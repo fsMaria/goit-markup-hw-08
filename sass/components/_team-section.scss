@@ -1,0 +1,90 @@
+// .team {
+//     background-color: $team-color;
+//   }
+//   .team__name {
+//     color: $title-text-color;
+//     font-size: 16px;
+//     font-weight: 500;
+//     line-height: 1.2;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;
+//   }
+//   .team__profession {
+//     font-size: 16px;
+//     line-height: 1.2;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 16px;
+//   }
+
+//   .team__image {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+//   }
+//   .team__item {
+//     background: $white-color;
+//     width: 100%;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//   }
+//   .team__content {
+//     padding: 30px 32px;
+//   }
+
+//   .team__item {
+//     text-align: center;
+//     @media screen and (max-width: 767px) {
+//         &:not(:last-child) {
+//             margin-bottom: $card-set-gap;
+//         }
+//     }
+
+//       @media screen and (min-width: 768px) and (max-width: 1200px) {
+//         //   flex-basis: calc((100% - #{$card-set-gap}) / 2);
+//           &:nth-child(2n + 1) {
+//          margin-right: $card-set-gap;
+//           }
+//           &:nth-child(-n + 2) {
+//               margin-bottom: $card-set-gap;
+//           }
+//       }
+//       @media screen and (min-width: 1200px) {
+//         &:not(:last-child) {
+//             margin-right: $card-set-gap;}
+
+//       }
+//   }
+  
+//   .team__list {
+//     @media screen and (min-width: 768px) {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: center;
+//     }}
+//   .team__network {
+//     display: flex;
+//     justify-content: center;
+//   }
+//   .team__icon {
+//         &:not(:last-child) {
+//         margin-right: 10px;
+//   }}
+//   .team__link {
+      
+//    @include socialIcon();
+//           fill: $icon-color;
+//     @media screen and (min-width: 1200px) {
+    
+    
+//     transition-property: background-color, fill;
+//     transition-duration: $transition-time;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         &:hover,
+//         &:focus {
+//         border-radius: 50%;
+//         background-color: $accent-color;
+//         fill: $white-color;
+//   }
+//   }
+//   }
