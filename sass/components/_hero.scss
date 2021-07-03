@@ -16,6 +16,13 @@
     margin: 0 auto;
     padding-top: 118px;
     padding-bottom: 118px;
+//     @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+  
+//     background-image: url(../imagen/hero-mobil-2-min.jpg);
+  
+// }
 
     @media screen and (min-width: 768px) {
         max-width: 100%;
@@ -33,9 +40,11 @@
             to right,
             rgba(47, 58, 57, 0.4),
             rgba(47, 48, 58, 0.4)
-          ), url(../imagen/hero-decktop-min.jpg);
+          ), url(../imagen/hero-desktop-min.jpg);
     }
   }
+
+
   .hero__title {
     margin-top: 0;
     margin-bottom: $card-set-gap;
