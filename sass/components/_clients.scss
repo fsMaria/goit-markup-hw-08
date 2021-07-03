@@ -1,28 +1,61 @@
 
-//   .clients__link {
-//     display: inline-flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 100%;
-//     height: 100%;
-//     border: 1px solid $icon-color;
-//     border-radius: 4px;
-//     fill: $icon-color;
-//     transition-property: border-color, fill;
-//     transition-duration: $transition-time;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//           &:hover,
-//           &:focus {
-//           fill: $accent-color;
-//           border-color: $accent-color;
-//     }
-//   }
-//   .clients__icon {
-//     width: 100%;
-//     height: auto;
-//     display: flex;
-//     flex-wrap: wrap;
-//      flex-basis: calc(100% / 2);
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+   }
+  
+  .clients__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    fill: $icon-color;
+    transition-property: border-color, fill;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover,
+          &:focus {
+          fill: $accent-color;
+          border-color: $accent-color;
+    }
+  }
+  .clients__icon {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - #{$ItemMargin}) / 2);
+        margin-left: 30px;
+        &:nth-child(-n + 4) {
+        margin-bottom: $card-set-gap;
+      }
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 90px) / 3);
+          margin-left: 30px;
+          &:nth-child(-n + 3) {
+            margin-bottom: $card-set-gap;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 180px) / 6);
+        justify-content: space-between;
+        &:not(:last-child) {
+        margin-left: 30px;
+    }
+        &:nth-child(-n + 6) {
+            margin-bottom: 0;
+          }
+      }
+
+
+
+
+
 //     &:nth-child(-n + 4) {
 //         margin-bottom: $card-set-gap;
 //     &:nth-child(2n + 1) {
@@ -30,19 +63,12 @@
 //     }}
 //     @media screen and (min-width: 768px){
 //         flex-basis: calc(100% / 3);
-//     &:nth-child(-n + 3) {
-//         margin-bottom: $card-set-gap;
-//     }
+    // &:nth-child(-n + 3) {
+    //     margin-bottom: $card-set-gap;
+    // }
 //     &:nth-child(2n + 1) {
 //         margin-right: $card-set-gap;
 //     }
 //   }
-// //   @media screen and (min-width: 768px) {
 
-// //   }
-// } 
-// .clients {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//    }
+} 
