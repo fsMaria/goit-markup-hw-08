@@ -1,0 +1,67 @@
+
+.hero {
+    max-width: 100%;
+    height: 400px;
+    background-color: $bg-hero-gradient;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 58, 57, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../imagen/hero-mobil-min.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin: 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 100%;
+        height: 400px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 58, 57, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ), url(../imagen/hero-tablet-min.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 58, 57, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ), url(../imagen/hero-decktop-min.jpg);
+    }
+  }
+  .hero__title {
+    margin-top: 0;
+    margin-bottom: $card-set-gap;
+    color: $white-color;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  } 
+}
+
+  .hero__button {
+    @extend %button;
+    color: $white-color;
+    background-color: $accent-color;
+  
+    transition-property: background-color;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+        &:hover,
+        &:focus {
+        cursor: pointer;
+        background-color: $hover-color;
+  }}
