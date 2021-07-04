@@ -1,0 +1,222 @@
+// ПРАВИЛО ДЛЯ БЕКДРОПА
+.backdrop {
+    position: fixed;
+    padding-left: 15px; 
+    padding-right: 15px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: $viewport-modal-background;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+//   ПРАВИЛА ДЛЯ МОДАЛЬНОГО ОКНА
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 450px;
+    max-height: 609px;
+    padding: 52px 44px 28px 36px;
+    transform: translate(-50%, -50%) scale(1);
+    transition-property: transform;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    background-color: $white-color;
+    border-radius: 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+      @media screen and (min-width: 1200px) {
+        max-width: 528px;
+        height: 581px;
+      }
+  }
+  .is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+  [data-modal-close] {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $modal-button-color;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        fill: $accent-color;
+    }
+  }
+
+  
+  // ПРАВИЛА ДЛЯ ФОРМЫ МОДАЛЬНОГО ОКНА
+
+  .modal__form {
+    width: 100%;
+   
+  }
+  .modal__provoke-text {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+   
+  }
+  .modal__form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+  }
+  
+  .modal__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-5%);
+  }
+  
+  .modal__input{
+    height: 40px;
+    border: 1px solid $input-color;
+    border-radius: 4px;
+    padding: 11px 12px 11px 43px;
+  
+    transition-property: border, fill;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        border: 1px solid $accent-color;
+        outline: none;
+        }
+  }
+  
+  
+  .modal__input + .modal__icon{
+    transition-property:  fill;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+  }
+  .modal__input {
+  &:hover + .modal__icon,
+  &:focus + .modal__icon {
+  fill: $accent-color;
+  }
+  }
+  
+  .modal__label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+//   ПРАВИЛО ДЛЯ КОМЕНТАРИЯ (TEXTAREA)
+  .modal__comment {
+    width: inherit;
+    height: 120px;
+    border: 1px solid $input-color;
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+  
+    transition-property:  border;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &::placeholder {
+            font-size: 14px;
+            color: $placeholder-color;
+          }
+        &:hover,
+        &:focus {
+        border: 1px solid $accent-color;
+        outline: none;
+        
+  }
+  }
+  
+  
+// ПРАВИЛО ДЛЯ ЧЕКБОКСА
+.modal__checkbox {
+    margin-top: 20px;
+    
+  }
+  
+  .modal__checkbox-icon {
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    fill: $white-color;
+    border: 2px solid $title-text-color;
+    border-radius: 1px;
+   display: inline-block;
+  //  display: flex;
+  }
+  .modal__checkbox-label {
+   font-size: 12px;
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   //  display: flex;
+  
+  }
+  
+  
+  .modal__checkbox-input {
+    &:focus + .modal__checkbox-label .modal__checkbox-icon{
+    border: 3px solid $accent-color;
+  }
+}
+  .modal__checkbox-input {
+    &:checked + .modal__checkbox-label .modal__checkbox-icon {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    border-radius: 4px;
+  }
+}
+  .modal__checkbox-link {
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
+    }
+
+// ПРАВИЛО ДЛЯ КНОПКИ МОДАЛЬНОГО ОКНА
+.modal__button{
+  @extend %button;
+    margin-top: 30px;
+    // margin-left: 124px  
+    color: $white-color;
+    background-color: $accent-color;
+  
+    transition-property: background-color, box-shadow;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        cursor: pointer;
+        background-color: $hover-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        border-radius: 4px;
+        }
+  }
+ 
