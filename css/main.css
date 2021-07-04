@@ -727,10 +727,10 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 96%;
   max-width: 450px;
   max-height: 609px;
-  padding: 52px 44px 28px 36px;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition-property: transform;
   transition-duration: 250ms;
@@ -779,6 +779,7 @@ img {
 
 .modal__provoke-text {
   display: inline-block;
+  text-align: center;
   margin-bottom: 12px;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -871,6 +872,14 @@ img {
   display: inline-block;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-label {
+    font-size: 14px;
+    display: flex;
+  }
 }
 
 .modal__checkbox-input:focus + .modal__checkbox-label .modal__checkbox-icon {
@@ -889,7 +898,8 @@ img {
 }
 
 .modal__button {
-  margin-top: 30px;
+  display: block;
+  margin: auto;
   color: white;
   background-color: #2196f3;
   transition-property: background-color, box-shadow;
