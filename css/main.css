@@ -712,6 +712,13 @@ img {
   .buttons-menu {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-menu {
+    margin-bottom: 50px;
   }
 }
 
@@ -750,6 +757,12 @@ img {
 
 .buttons-menu__list:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-menu__list:nth-child(-n + 5) {
+    margin-bottom: 0;
+  }
 }
 
 .button-menu--prime-button {
