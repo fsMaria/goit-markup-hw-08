@@ -118,7 +118,7 @@ img {
   max-width: 100%;
   height: 400px;
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(to right, rgba(47, 58, 57, 0.4), rgba(47, 48, 58, 0.4)), url(../imagen/hero-mobil-min.jpg);
+  background-image: linear-gradient(to right, rgba(47, 58, 57, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil-min.jpg);
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -132,7 +132,7 @@ img {
   .hero {
     max-width: 100%;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 58, 57, 0.4), rgba(47, 48, 58, 0.4)), url(../imagen/hero-tablet-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 58, 57, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-min.jpg);
   }
 }
 
@@ -140,7 +140,7 @@ img {
   .hero {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 58, 57, 0.4), rgba(47, 48, 58, 0.4)), url(../imagen/hero-desktop-min.jpg);
+    background-image: linear-gradient(to right, rgba(47, 58, 57, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-min.jpg);
   }
 }
 
@@ -748,7 +748,7 @@ img {
   overflow-y: hidden;
 }
 
-.projects__imagen {
+.projects__images {
   display: block;
   max-width: 100%;
   height: auto;
