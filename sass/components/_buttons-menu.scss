@@ -1,0 +1,55 @@
+.buttons-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+
+  } 
+    }
+  .buttons-menu__button {
+    min-width: 130px;
+    min-height: 38px;
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: $team-color;
+    color: $title-text-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    filter: $accent-color;
+    font-family: inherit;
+    border: none;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        background-color: $accent-color;
+        color: $white-color;
+        cursor: pointer;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+  }
+  }
+  
+
+  .buttons-menu__list {
+      &:nth-child(-n + 3) {
+      margin-bottom: 15px;}
+      &:not(:last-child) {
+    margin-right: 8px;
+  }}
+
+  .button-menu--prime-button {
+    min-width: 73px;
+    min-height: 38px;
+    background-color: $accent-color;
+    color: $white-color;
+    transition-property: box-shadow;
+  }
