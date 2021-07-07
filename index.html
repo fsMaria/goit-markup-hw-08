@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="page">
-    <header class="header">
+    <header class="header container">
         <div class="container header__mobile">
                 <a href="" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
                 <button type="button" class="menu-open">
-                    <svg width="40" height="40">
+                    <svg width="40" height="40" class="mobile-menu__button-icon">
                         <use href="./images/icon/symbol-defs.svg#mobile-menu"></use>
                     </svg>
                 </button>
@@ -163,7 +163,12 @@
             <h2 class="title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img srcset="./images/teamcard1-mobil-min.jpg 1x, ./images/teamcard1-mobil-2x-min.jpg 2x" alt="фото" class="team_image" width="450">
+                    <picture>
+                        <source srcset="./images/teamcard1-desktop-min.jpg 1x, ./images/teamcard1-desktop-2x-min.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/teamcard1-tablet-min.jpg 1x, ./images/teamcard1-tablet-2x-min.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/teamcard1-mobil-min.jpg 1x, ./images/teamcard1-mobil-2x-min.jpg 2x" media="(min-width: 480px)"> 
+                    </picture>
+                    <!-- <img srcset="./images/teamcard1-mobil-min.jpg 1x, ./images/teamcard1-mobil-2x-min.jpg 2x" alt="фото" class="team_image" width="450"> -->
                     <div class="team__content">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p lang="en" class="team__profession">Product Designer</p>
