@@ -1048,6 +1048,7 @@ img {
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.173;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1077,7 +1078,6 @@ img {
 }
 
 .footer__list {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
