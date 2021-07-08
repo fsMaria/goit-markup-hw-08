@@ -2,7 +2,6 @@
 .header { 
     border-bottom: 1px solid $line-color;
     .header__mobile{
-     
     display: flex;
     justify-content: space-between;
     align-items: center;}
@@ -15,7 +14,16 @@
     }}
 
 .mobile-menu {
-    position: fixed;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: $white-color;
+      overflow: auto;
+      z-index: 2;
+    .container {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,7 +41,7 @@
             max-width: 480px;
         }
         
-    }
+    }}
      @media screen and (min-width:768px) {
          display: none;
     }
@@ -50,17 +58,17 @@
     width: 100%;
 }
 
-// .mobile-menu__button {
-//     position: absolute;
-//     right: 25px;
-//     top: 21px;
-// }
 .menu-open { 
     border: none;
     background-color: transparent;
-    &:hover,
-    &:focus {
-     fill: $accent-color;}
+    transition-property: border-color, fill;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover,
+          &:focus {
+          fill: $accent-color;
+          border-color: $accent-color;
+    }
 
     @media screen and (min-width:767px) {
         display: none;
@@ -69,13 +77,18 @@
 
 .menu-close {
     position: absolute;
-    right: 25px;
+    right: 15px;
     top: 21px;
     border: none;
     background-color: transparent;
-    &:hover,
-    &:focus {
-     fill: $accent-color;}
+    transition-property: border-color, fill;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover,
+          &:focus {
+          fill: $accent-color;
+          border-color: $accent-color;
+    }
 }
 
 // ПРАВИЛА ДЛЯ НАВИГАЦИИ МОБ МЕНЮ

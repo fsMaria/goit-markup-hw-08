@@ -29,11 +29,12 @@
     height: 92px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
     flex-basis: calc((100% - #{$ItemMargin}) / 2);
         margin-left: 30px;
         &:nth-child(-n + 4) {
         margin-bottom: $card-set-gap;
-      }
+      }}
       @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 90px) / 3);
           margin-left: 30px;

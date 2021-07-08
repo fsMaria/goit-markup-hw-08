@@ -172,11 +172,13 @@
     border-radius: 1px;
     display: inline-block;
     vertical-align: middle;
+    
   }
   .modal__checkbox-label {
    font-size: 12px;
    display: inline-block;
    margin-bottom: 30px;
+   cursor: pointer;
   
    @media screen and (min-width: 1200px){
     font-size: 14px; 
