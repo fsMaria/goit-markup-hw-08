@@ -13,6 +13,7 @@
         
     }
   }
+  // ПРАВИЛА ДЛЯ КОНТАКТОВ 
  .footer__contacts-box {
     display: flex;
     flex-direction: column;
@@ -29,6 +30,42 @@
         align-items: flex-start;
     }
  }
+
+ .footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: $transition-time;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+      color: $accent-color;
+  }
+}
+.footer__address {
+  font-style: normal;
+  font-size: 14px;
+  color: $white-color;
+  line-height: 1.7;
+}
+.footer__location {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.footer__contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:not(:last-child){
+       margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+  }
+}
+
+//  ПРАВИЛА ДЛЯ ФОРМЫ 
   .footer__form {
     display: flex;
     flex-direction: column;
@@ -38,10 +75,8 @@
     margin-left: auto;
     margin-top: 0;
     align-items: stretch;
-
     }
-}
-   
+}  
   .footer__sub-area {
     display: flex;
     flex-direction: column;
@@ -51,8 +86,7 @@
     @media screen and (min-width: 1200px) {
         flex-direction: row;
         margin-left: auto;
-    }
-    
+    } 
   }
   .footer__input{
     width: 100%;
@@ -72,7 +106,7 @@
     margin-right: 12px;}
   }
   
-  
+  // ПРАВИЛА ДЛЯ КНОПКИ
   .footer__button { 
     @extend %button;
     padding: 10px 62px 10px 29px;
@@ -97,42 +131,8 @@
       transform: translateY(-50%);
       fill: $white-color;
     }
-  .footer__link {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    transition-property: color;
-    transition-duration: $transition-time;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-        color: $accent-color;
-    }
-  }
-  .footer__address {
-    font-style: normal;
-    font-size: 14px;
-    color: $white-color;
-    line-height: 1.7;
-  }
-  .footer__location {
-    margin-top: 20px;
-    margin-bottom: 8px;
-  }
-  .footer__contacts-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &:not(:last-child){
-         margin-bottom: 8px;
-    }
-    @media screen and (min-width: 1200px) {
-        align-items: flex-start;
-    }
-  }
-
   
-// //      ПРАВИЛА ДЛЯ ИКОНОК СОЦСЕТЕЙ
+//      ПРАВИЛА ДЛЯ ИКОНОК СОЦСЕТЕЙ
   .footer__network {
    
     display: flex;

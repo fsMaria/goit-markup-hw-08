@@ -1,4 +1,4 @@
-
+// ПРАВИЛА ДЛЯ ИКОНОК СЕКЦИИ КЛИЕНТОВ
   .clients {
     display: flex;
     flex-wrap: wrap;
@@ -50,26 +50,6 @@
     }
         &:nth-child(-n + 6) {
             margin-bottom: 0;
-          }
-      }
-
-
-
-
-
-//     &:nth-child(-n + 4) {
-//         margin-bottom: $card-set-gap;
-//     &:nth-child(2n + 1) {
-//         margin-right: $card-set-gap;
-//     }}
-//     @media screen and (min-width: 768px){
-//         flex-basis: calc(100% / 3);
-    // &:nth-child(-n + 3) {
-    //     margin-bottom: $card-set-gap;
-    // }
-//     &:nth-child(2n + 1) {
-//         margin-right: $card-set-gap;
-//     }
-//   }
-
-} 
+    }
+  }
+}

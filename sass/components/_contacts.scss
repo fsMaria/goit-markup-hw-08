@@ -1,0 +1,93 @@
+// ПРАВИЛА ДЛЯ КОНТАКТОВ 
+.mobile-menu__contacts{
+    margin-bottom: 64px;
+}
+
+.mobile-menu__contacts-item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+        @media screen and (min-width: 768px) {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+        }}
+    }
+}
+  .mobile-menu__contacts-link {
+    color: $primary-text-color;
+    font-size: 20px;
+    line-height: 1.176;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            font-size:26px;
+            color: $accent-color;
+    }
+
+  @media screen and (min-width: 480px) {
+      font-size: 24px;
+      &:hover,
+      &:focus {
+          font-size: 34px;}
+  }}
+
+  .contacts__item {
+    font-size: 14px;
+    @media screen and (max-width: 1199px) {
+    &:not(:last-child) { 
+    padding-bottom: 10px; 
+    }
+}
+    @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    padding-bottom: 0;
+} }
+
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    color: $primary-text-color;
+    font-size: 12px;
+    line-height: 1.176;
+    
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: $accent-color;}
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+             
+            }
+}
+.contacts {
+    padding-top: 21px;
+    padding-bottom: 21px; 
+@media screen and (min-width:1200px) {
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 31px; 
+    }
+}
+.contacts__mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.contacts__phone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}

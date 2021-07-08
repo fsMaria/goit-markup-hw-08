@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="page">
-    <header class="header ">
+    <header class="header">
+                <!-- ШАПКА ПРОФИЛЯ -->
         <div class="container header__mobile">
                 <a href="" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
                 <button type="button" class="menu-open">
@@ -46,7 +47,7 @@
                 </li>
             </ul>
         </div>
-        </div>  
+                <!-- МОБИЛЬНОЕ МЕНЮ -->
             <div class="mobile-menu is-hidden">
             <div class="container">
                 <button type="button" class="menu-close mobile-menu__button">
@@ -83,12 +84,14 @@
         </div>
     </header>
     <main>
+                <!-- СЕКЦИЯ ГЕРОЙ -->
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button data-modal-open  class="hero__button" type="button" >Заказать услугу</button>
             </div>
         </section>
+                 <!-- СЕКЦИЯ ПРЕИМУЩЕСТВА -->
         <section class="feature section">
             <div class="container">
             <h2 class="hidden">скрытый заголовок</h2>
@@ -132,31 +135,42 @@
             </ul>
             </div>
         </section>
+                <!-- СЕКЦИЯ ЧЕМ ЗАНИМАЕМСЯ -->
         <section class="work">
-        <div class="container">
-            <h2 class="title">Чем мы занимаемся</h2>
-            <ul class="work__list">
-                <li class="work__item">
-                    <div class="work__box">
-                        <img  srcset="./images/box1.jpg 1x, ./images/box1-2-min.jpg 2x" alt="работа" width="370">
-                        <p class="work__text">Десктопные приложения</p>
-                    </div>
+            <div class="container">
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="work__list">
+                    <li class="work__item">
+                        <div class="work__box">
+                            <picture>
+                                <source srcset="./images/box1.jpg 1x, ./images/box1-2-min.jpg 2x" media="(min-width: 1200px)"> 
+                                <img src="./images/box1.jpg" alt="работа" width="370">
+                            </picture>
+                            <p class="work__text">Десктопные приложения</p>
+                        </div>
                 </li>
                 <li class="work__item">
                     <div class="work__box">
-                        <img srcset="./images/box2.jpg 1x, ./images/box2-2-min.jpg 2x" alt="работа" width="370">
+                        <picture>
+                            <source srcset="./images/box2.jpg 1x, ./images/box2-2-min.jpg 2x" media="(min-width: 1200px)"> 
+                            <img src="./images/box2.jpg" alt="работа" width="370">
+                        </picture>
                         <p class="work__text">мобильные приложения</p>
                     </div>
                 </li>
                 <li class="work__item">
                     <div class="work__box">
-                        <img srcset="./images/box3.jpg 1x, ./images/box3-2-min.jpg 2x" alt="работа" width="370">
+                        <picture>
+                            <source srcset="./images/box3.jpg 1x, ./images/box3-2-min.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/box3.jpg" alt="работа" width="370"> 
+                        </picture>
                         <p class="work__text">дизайнерские решения</p>
                     </div>
                 </li>
-            </ul>
-        </div>
-        </section>        
+                </ul>
+            </div>
+        </section>
+                <!-- СЕКИЦЯ НАША КОМАНДА-->
         <section class="team section">
             <div class="container">
             <h2 class="title">Наша команда</h2>
@@ -193,7 +207,7 @@
                         <source srcset="./images/teamcard2-desktop.jpg 1x, ./images/teamcard2-desktop2-min.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/teamcard2-tablet-min.jpg 1x, ./images/teamcard2-tablet2-min.jpg 2x" media="(min-width: 768px)">
                         <source srcset="./images/teamcard2-mobil-min.jpg 1x, ./images/teamcard2-mobil-2x-min.jpg 2x" media="(min-width: 480px)"> 
-                        <img srcset="./images/teamcard2-mobil-min.jpg 1x, ./images/teamcard2-mobil-2x-min.jpg 2x" alt="фото" class="team__image" width="450">
+                        <img src="./images/teamcard2-mobil-min.jpg" alt="фото" class="team__image" width="450">
                     </picture>
                     
                     <div class="team__content">
@@ -236,7 +250,7 @@
                         <source srcset="./images/teamcard3-desktop.jpg 1x, ./images/teamcard3-desktop2-min.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/teamcard3-tablet-min.jpg 1x, ./images/teamcard3-tablet2-min.jpg 2x" media="(min-width: 768px)">
                         <source srcset="./images/teamcard3-mobil-min.jpg 1x, ./images/teamcard3-mobil-2x-min.jpg 2x" media="(min-width: 480px)"> 
-                        <img srcset="./images/teamcard3-mobil-min.jpg 1x, ./images/teamcard3-mobil-2x-min.jpg 2x" alt="фото" class="team__image" width="450">
+                        <img src="./images/teamcard3-mobil-min.jpg" alt="фото" class="team__image" width="450">
                     </picture>
                     
                     <div class="team__content">
@@ -279,7 +293,7 @@
                         <source srcset="./images/teamcard4-desktop.jpg 1x, ./images/teamcard4-desktop2-min.jpg 2x" media="(min-width: 1200px)">
                         <source srcset="./images/teamcard4-tablet-min.jpg 1x, ./images/teamcard4-tablet2-min.jpg 2x" media="(min-width: 768px)">
                         <source srcset="./images/teamcard4-mobil-min.jpg 1x, ./images/teamcard4-mobil-2x-min.jpg 2x" media="(min-width: 480px)"> 
-                        <img srcset="./images/teamcard4-mobil-min.jpg 1x, ./images/teamcard4-mobil-2x-min.jpg 2x" alt="фото" class="team__image" width="450">
+                        <img src="./images/teamcard4-mobil-min.jpg" alt="фото" class="team__image" width="450">
                     </picture>
                     
                     <div class="team__content">
@@ -320,6 +334,7 @@
             </ul>
             </div>
         </section>
+                <!-- СЕКЦИЯ НАШИ КЛИЕНТЫ -->
         <section class="section">
             <div class="container">
             <h2 class="title">Постоянные клиенты</h2>
@@ -357,9 +372,8 @@
             </ul>
             </div>
         </section>
-
     </main>
-
+                <!-- ФУТЕР -->
     <footer class="footer">
         <div class="container footer__box">
             <div class="footer__contacts-box">
@@ -418,7 +432,7 @@
             </form>
         </div>
     </footer>
-
+            <!-- МОДАЛЬНОЕ ОКНО -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button data-modal-close  type="button"><svg width="18" height="18">

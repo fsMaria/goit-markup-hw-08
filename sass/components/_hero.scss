@@ -1,4 +1,4 @@
-
+// ПРАВИЛО ДЛЯ БЭКГРАУНДА
 .hero {
     max-width: 100%;
     height: 400px;
@@ -76,7 +76,7 @@
     
   }}
   }
-
+// ПРАВИЛО ДЛЯ ЗАГОЛОВКА
 
   .hero__title {
     margin-top: 0;
@@ -92,7 +92,7 @@
     font-size: 44px;
   } 
 }
-
+// ПРАВИЛО ДЛЯ КНОПКИ
   .hero__button {
     @extend %button;
     color: $white-color;
