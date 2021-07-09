@@ -21,10 +21,11 @@
     margin-bottom: 60px;
     @media screen and (min-width:768px) {
     margin-right: 165px;
-    margin-bottom: 0;
+    
     }
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
+        margin-bottom: 0px;
     }
     @media screen and (min-width: 1200px) {
         align-items: flex-start;
@@ -50,7 +51,6 @@
   line-height: 1.7;
 }
 .footer__location {
-  margin-top: 20px;
   margin-bottom: 8px;
 }
 .footer__contacts-list {
@@ -70,7 +70,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
     @media screen and (min-width: 1200px) {
     margin-left: auto;
     margin-top: 0;
@@ -81,7 +80,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     width: 100%;
     @media screen and (min-width: 1200px) {
         flex-direction: row;
@@ -134,15 +132,14 @@
   
 //      ПРАВИЛА ДЛЯ ИКОНОК СОЦСЕТЕЙ
   .footer__network {
-   
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (min-width: 768px) {
-        margin-top: 0;
-    }
+   
     @media screen and (min-width: 1200px) {
-        align-items: stretch;  
+        align-items: stretch; 
+        margin-bottom: 0; 
     }
   }
   .footer__connect {
@@ -153,9 +150,6 @@
     letter-spacing: 0.03em;
     line-height: 1.173;
     margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
-        padding-top: 20px;
-    }
   }
   
   .footer__network-link {
