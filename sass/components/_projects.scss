@@ -62,6 +62,8 @@
     height: auto;
   }
   .projects__name {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     background-color: $white-color;
     width: 100%;
@@ -78,7 +80,7 @@
   }
   .projects__develop {
     font-size: 18px;
-    letter-spacing: 0.6em;
+    letter-spacing: .06em;
     color: $title-text-color;
     margin-top: 0;
     margin-bottom: 20px;

@@ -1447,6 +1447,8 @@ img {
 }
 
 .projects__name {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   background-color: white;
   width: 100%;
@@ -1470,7 +1472,7 @@ img {
 
 .projects__develop {
   font-size: 18px;
-  letter-spacing: 0.6em;
+  letter-spacing: .06em;
   color: #212121;
   margin-top: 0;
   margin-bottom: 20px;
