@@ -1,4 +1,4 @@
-// ПРАВИЛА ДЛЯ КОНТАКТОВ 
+// ПРАВИЛА ДЛЯ КОНТАКТОВ МОБ МЕНЮ
 .mobile-menu__contacts{
     margin-bottom: 64px;
 }
@@ -39,16 +39,18 @@
     font-size: 14px;
     @media screen and (max-width: 1199px) {
     &:not(:last-child) { 
-    padding-bottom: 10px; 
+    margin-bottom: 10px; 
     }
 }
     @media screen and (min-width: 1200px) {
     margin-right: 50px;
-    padding-bottom: 0;
+    margin-bottom: 0;
 } }
 
 
-.contacts__link {
+.contacts__link-mail,
+.contacts__link-tel
+ {
     display: flex;
     align-items: center;
     color: $primary-text-color;
@@ -70,16 +72,31 @@
             }
 }
 .contacts {
-    padding-top: 21px;
-    padding-bottom: 21px; 
 @media screen and (min-width:1200px) {
     display: flex;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 31px; 
+    margin-left: auto; 
+    }
+}
+.contacts__link-mail {
+    @media screen and (min-width:768px) {
+        padding-top: 21px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 32px;
+    padding-bottom: 31px;
+    }
+}
+.contacts__link-tel {
+    @media screen and (min-width:768px) {
+        padding-bottom: 21px; 
+    }
+    @media screen and (min-width:1200px) {
+        padding-top: 32px;
+    padding-bottom: 31px;
     }
 }
 .contacts__mail-icon {
+
     width: 16px;
     height: 12px;
     margin-right: 10px;
