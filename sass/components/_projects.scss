@@ -40,6 +40,7 @@
   }
 
   .projects__link {
+    height: 100%;
     display: block;
     transition-property: box-shadow;
     transition-duration: $transition-time;
@@ -61,7 +62,6 @@
     height: auto;
   }
   .projects__name {
-    -webkit-box-flex: 1;
     flex-grow: 1;
     background-color: $white-color;
     width: 100%;
@@ -78,6 +78,7 @@
   }
   .projects__develop {
     font-size: 18px;
+    letter-spacing: 0.6em;
     color: $title-text-color;
     margin-top: 0;
     margin-bottom: 20px;

@@ -1423,6 +1423,7 @@ img {
 }
 
 .projects__link {
+  height: 100%;
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -1446,7 +1447,6 @@ img {
 }
 
 .projects__name {
-  -webkit-box-flex: 1;
   flex-grow: 1;
   background-color: white;
   width: 100%;
@@ -1470,6 +1470,7 @@ img {
 
 .projects__develop {
   font-size: 18px;
+  letter-spacing: 0.6em;
   color: #212121;
   margin-top: 0;
   margin-bottom: 20px;
