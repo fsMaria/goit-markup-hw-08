@@ -40,8 +40,9 @@
   }
 
   .projects__link {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    display: block;
     transition-property: box-shadow;
     transition-duration: $transition-time;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -62,8 +63,6 @@
     height: auto;
   }
   .projects__name {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
     background-color: $white-color;
     width: 100%;
@@ -73,6 +72,7 @@
     padding: 20px 24px;
     @media screen and (min-width: 768px) {
       min-width: 354px;
+    
     }
     @media screen and (min-width: 1200px) {
       min-width: 370px;
