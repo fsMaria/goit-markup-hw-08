@@ -155,9 +155,7 @@ img {
   background-color: white;
   overflow: auto;
   z-index: 777;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms ease-in-out;
 }
 
 .mobile-menu .container {
@@ -186,7 +184,6 @@ img {
 }
 
 .mobile-menu.is-hidden {
-  transform: translate(100%, -50%) scale(0.3);
   opacity: 0;
   pointer-events: none;
 }
@@ -222,8 +219,8 @@ img {
 
 .menu-close {
   position: absolute;
-  right: 15px;
-  top: 21px;
+  right: 20px;
+  top: 6px;
   border: none;
   background-color: transparent;
   transition-property: border-color, fill;
